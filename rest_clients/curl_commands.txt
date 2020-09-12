@@ -1,0 +1,9 @@
+Commands to GET, POST, PUT, DELETE using CURL for the Project -   C:\vandana\java_projects\tut-rest   (Evolution) 
+
+curl -X GET --header 'Accept: application/json'  'http://localhost:8080/Employees' | jq
+
+curl -X POST localhost:8080/employees -H 'Content-type:application/json' -d '{"name": "Janaki Vaddadi", "role": "tester"}'
+
+curl -v -X PUT localhost:8080/employees/3 -H 'Content-Type:application/json' -d '{"name": "Vandana Vaddadi", "role": "tester"}'
+
+curl  -X DELETE localhost:8080/employees/3
